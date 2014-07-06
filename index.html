@@ -5,7 +5,7 @@
 	<title>HTML_Semantic</title>
 </head>
 <body>
-	<div id="container">
+	<div id="main-container">
 		<!-- main header -->
 		<header>
 			<!-- first line -->
@@ -18,17 +18,18 @@
 						<li><a href="#"><img src="/" alt="Twitter"></a></li>
 						<li><a href="#"><img src="/" alt="rss"></a></li>
 					</ul>
-					<span>
+					<p>
 						<em>Следи за нами в
 							<br>социальных сетях!</em>
-					</span>
+					</p>
 				</div>
 				<!-- end social Networks -->
 
 				<!-- Banner 468x60 -->
-				<div class="banner" >
-					<i>Banner 468x60</i>
-				</div>
+				<a href="#">
+					<img src="#" alt="banner">
+					<p>Banner 468x60</p>
+				</a>
 				<!-- end Banner 468x60 -->
 
 			</div>
@@ -39,76 +40,76 @@
 				<!-- logo -->	
 				<div>
 					<h1>
-						COOLWAREZSITE.<span>COM</span><br> 
+						COOLWAREZSITE.<mark>COM</mark><br> 
 						<strong><em>Современный варез портал</em></strong> 
 					</h1>
 				</div>
 				<!-- end logo  -->
 
 				<!-- autorization  -->
-				<div>
-					<form action="index.html" method="post">
-						<input type="text" placeholder="Логин..."  list="login">
-						<datalist id="login">
-							<option value="Чебурашка">Чебурашка</option>
-							<option value="Крокодил Гена">Крокодил Гена</option>
-							<option value="Шапокляк">Шапокляк</option>
-						</datalist>
-						<input type="password" placeholder="Пароль...">
-						<input type="image" src="/" alt="Submit">
-					</form>
-				</div>
+				<form action="index.html" method="post">
+					<input type="text" placeholder="Логин..."  list="login">
+					<datalist id="login">
+						<option value="Чебурашка">Чебурашка</option>
+						<option value="Крокодил Гена">Крокодил Гена</option>
+						<option value="Шапокляк">Шапокляк</option>
+					</datalist>
+					<!-- datalist для пользователей заходивших с даного браузера. Хранятся в куках:) 
+						подгружаеться с помощью JS -->
+					<input type="password" placeholder="Пароль...">
+					<input type="image" src="/" alt="Submit">
+					<!-- type="image" тоже отправляет данные на сервер, можно и type="submit"  -->
+				</form>
 				<!-- end autorization  -->
 
 				<div>
-					<i><a href="#">Регистрация на сайте!</a>
-						<br><a href="#">Забыл пароль ?</a></i> 
+					<p>
+						<a href="#">Регистрация на сайте!</a>
+					</p>
+					<p>
+						<a href="#">Забыл пароль ?</a>
+					</p>
 				</div>
 
 			</div>
 			<!-- end second line -->
 
 			<!-- menu -->
-			<div>
-				<menu>
-					<li>
-						<a href="#"><img src="/" alt="Add news"><em>Добавить новость!</em></a>
-					</li>	
-					<li>
-						<address><a href="#"><img src="/" alt="Contact">Связаться с Администрацией</a></address>
-					</li>
-					<li>
-						<a href="#"><img src="/" alt="Information"><em>Информация для Правообладателей</em></a>
-					</li>		
-					<li>
-						<a href="#"><img src="/" alt="Add to favorites"><em>Добавить в избранное!</em></a>
-					</li>		
-				</menu>
-			</div>
+			<menu>
+				<li>
+					<a href="#"><img src="#" alt="Add news">Добавить новость!</a>
+				</li>	
+				<li>
+					<a href="#"><img src="#" alt="Contact">Связаться с Администрацией</a>
+				</li>
+				<li>
+					<a href="#"><img src="#" alt="Information">Информация для Правообладателей</a>
+				</li>		
+				<li>
+					<a href="#"><img src="#" alt="Add to favorites">Добавить в избранное!</a>
+				</li>		
+			</menu>
 			<!-- end menu -->
 
 			<div>
 				<!-- navigation -->
-				<div>
-					<nav>
-						<ul>
-							<li><a href="#">Главная</a></li>
-							<li><a href="#">Форум</a></li>
-							<li><a href="#">Контакты</a></li>
-							<li><a href="#">Статистика</a></li>
-							<li><a href="#">Реклама</a></li>
-						</ul>
-					</nav>
-				</div>
+				<nav>
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Форум</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Статистика</a></li>
+						<li><a href="#">Реклама</a></li>
+					</ul>
+				</nav>
 				<!-- end navigation -->
 
 				<!-- search -->
-				<div>
-					<form action="index.html" method="post" role="search">
-						<input type="search" placeholder="Введите текст для поиска..">
-						<input type="image" src="#" alt="Submit">
-					</form>
-				</div>
+				<form action="index.html" method="post" role="search">
+					<input type="search" placeholder="Введите текст для поиска..">
+					<input type="image" src="#" alt="Submit">
+					<!-- type="image" тоже отправляет данные на сервер, можно и type="submit"  -->
+				</form>
 				<!-- end search -->
 			</div>
 
@@ -117,30 +118,25 @@
 				<div></div>
 				<!-- end empty block -->
 
-				<details open="open">
-					<summary><u>Обновление сайта v.2.0</u></summary>
+				<p>
+					<strong>Обновление сайта v.2.0</strong>
 					Уважаемые пользователи портала, <time datetime="2014-06-25T12:00:00"> сегодня в 12:00</time> был обновлён дизайн и CMS нашего портала. Администрация.
-				</details>
+				</p>
 			</div>
 
 		</header>
 		<!-- end main header -->
 
-		<section>
-
 			<!-- articles -->
-			<div>
+		<section>
 				<article>
 
-					<header>
-						<h2>Тестовая новость для макета от RealARTs</h2>
-					</header>
+					<h2>Тестовая новость для макета от RealARTs</h2>
 
-					<!-- <aside>  ???? -->
 					<div>
 						<dl>
 							<dt>Автор:</dt>
-							<dd><mark><u>RealARTs</u></mark></dd>
+							<dd><mark>RealARTs</mark></dd>
 							<dt>Категория:</dt>
 							<dd><mark>Новости</mark></dd>
 
@@ -153,11 +149,12 @@
 						<button><img src="/" alt="Heart"></button>
 						<button><img src="/" alt="Pencil"></button>
 					</div>
-					<!-- </aside> ????  -->
 
 					<img src="/" alt="img">
 					<div>
-						<strong>Спасибо за установку системы!</strong>
+						<p>
+							<strong>Спасибо за установку системы!</strong>
+						</p>
 
 						<p>
 							Разработка над системой длится около года, и по результатам предварительного тестирования, система показывает хорошие результаты.
@@ -171,7 +168,7 @@
 					</div>
 
 					<footer>
-						<span><b>Новость прокомментировали:</b>657 раз.</span>
+						<p><b>Новость прокомментировали:</b>657 раз.</p>
 						<button>ПОДРОБНЕЕ</button>
 					</footer>
 
@@ -179,14 +176,12 @@
 
 				<article>
 
-					<header>
-						<h2>Тестовая новость для макета от RealARTs</h2>
-					</header>
+					<h2>Тестовая новость для макета от RealARTs</h2>
 
 					<div>
 						<dl>
 							<dt>Автор:</dt>
-							<dd><mark><u>RealARTs</u></mark></dd>
+							<dd><mark>RealARTs</mark></dd>
 							<dt>Категория:</dt>
 							<dd><mark>Новости</mark></dd>
 
@@ -204,7 +199,9 @@
 					<img src="/" alt="img">
 
 					<div>
-						<strong>Спасибо за установку системы!</strong>
+						<p>
+							<strong>Спасибо за установку системы!</strong>
+						</p>
 
 						<p>
 							Разработка над системой длится около года, и по результатам предварительного тестирования, система показывает хорошие результаты.
@@ -218,7 +215,7 @@
 					</div>
 
 					<footer>
-						<span><b>Новость прокомментировали:</b>657 раз.</span>
+						<p><b>Новость прокомментировали:</b>657 раз.</p>
 						<button>ПОДРОБНЕЕ</button>
 					</footer>
 
@@ -227,14 +224,12 @@
 
 				<article>
 
-					<header>
-						<h2>Тестовая новость для макета от RealARTs</h2>
-					</header>
+					<h2>Тестовая новость для макета от RealARTs</h2>
 
 					<div>
 						<dl>
 							<dt>Автор:</dt>
-							<dd><mark><u>RealARTs</u></mark></dd>
+							<dd><mark>RealARTs</mark></dd>
 							<dt>Категория:</dt>
 							<dd><mark>Новости</mark></dd>
 
@@ -251,7 +246,9 @@
 					<img src="/" alt="img">
 
 					<div>
-						<strong>Спасибо за установку системы!</strong>
+						<p>
+							<strong>Спасибо за установку системы!</strong>
+						</p>
 
 						<p>
 							Разработка над системой длится около года, и по результатам предварительного тестирования, система показывает хорошие результаты.
@@ -263,7 +260,6 @@
 							При разработке Eleanor CMS, безопасность стояла на первом месте, мы постарались сделать для вас не только удобную, но и безопасную систему. В Eleanor CMS внедрены средства для работы с БД, способные полностью исключить возможность SQL инъекции.
 						</p>
 					</div>
-
 					
 
 					<footer>
@@ -277,7 +273,7 @@
 							<button><img src="/" alt="odnoklassniki"></button>
 							<button><img src="/" alt="Mail.ru"></button>
 							<button><img src="/" alt="arrow"></button>
-							<i>Поделитесть этой новостью с друзьями!</i>
+							<p>Поделитесть этой новостью с друзьями!</p>
 						</div>
 
 						<button><img src="/" alt="star"></button>
@@ -298,10 +294,9 @@
 					<!-- end empty block -->
 
 					<div>
-						<span>
-							<em>Уважаемый посетитель, Вы зашли на сайт как незарегистрированный пользователь.<br>
-								Мы рекомендуем Вам <a href="#">зарегистрироваться</a> либо войти на сайт под своим именем</em> 
-						</span>
+						<p>Уважаемый посетитель, Вы зашли на сайт как незарегистрированный пользователь.<br>
+								Мы рекомендуем Вам <a href="#">зарегистрироваться</a> либо войти на сайт под своим именем
+						</p>
 					</div>
 
 					<!-- navigation -->
@@ -316,7 +311,7 @@
 						<a href="#">8</a>
 						<a href="#">9</a>
 						<a href="#">10</a>
-						<a href="#">...</a>
+						<p>...</p>
 						<a href="#">65</a>
 						<button>Назад</button>
 						<button>Вперед</button>
@@ -326,99 +321,85 @@
 				</footer>
 				<!-- end section footer -->
 
-			</div>
-			<!-- end articles -->
+		</section>
+		<!-- end articles -->
 
-			<!-- chat -->
-			<div>
+		<!-- chat -->
+		<section>
 
-				<div>
-					<h3>Мини-чат</h3>
-				</div>
+			<h3>Мини-чат</h3>
+			<dl>
+				<dt>RealARTs:</dt>
+				<dd> Хороший дизайн, можно узнать, а кто рисовал дизайн для сайта ?</dd>
+				<dt>Bagner:</dt>
+				<dd>Вроде на сколько я помню, какая то компания... Ну у админа спросите)</dd>
+				<dt>Entrol:</dt>
+				<dd>Ку ку.. Есть кто в чате ?:)</dd>
+			</dl>
 
-				<div>
-					<span>
-						<strong>RealARTs</strong>: Хороший дизайн, можно узнать, а кто рисовал дизайн для сайта ?
-					</span>
-
-					<span>
-						<strong>Bagner</strong> : Вроде на сколько я помню, какая то компания... Ну у админа спросите)
-					</span>
-
-					<span>
-						<strong>Entrol</strong> : Ку ку.. Есть кто в чате ?:)
-					</span>
-				</div>
-
-				<div>
-					<form action="index.html">
+			<form action="index.html">
 						
-						<menu type="toolbar">
-							<button><b>B</b></button>
-							<button><i><b>i</b></i></button>
-							<button><u>U</u></button>
-							<button><s>U</s></button>
-							<button>:)</button>
-						</menu>
+				<menu type="toolbar">
+					<button><b>B</b></button>
+					<button><i><b>i</b></i></button>
+					<button>U</button>
+					<button><s>U</s></button>
+					<button>:)</button>
+				</menu>
 
-						<textarea>=)</textarea>
+				<textarea>=)</textarea>
 
-						<input type="submit" value="ОТПРАВИТЬ">
-						<input type="submit" value="ПРОСМОТР">
+				<input type="submit" value="ОТПРАВИТЬ">
+				<button>ПРОСМОТР</button>
 
-					</form>
-				</div>
-
-			</div>
-			<!-- end chat -->
-
-			<!-- comments -->
-			<aside>
-
-				<header>
-					<h3>Последние комментарии</h3>
-				</header>
-
-				<div>
-					<img src="/" alt="img">
-					<dl>
-						<dt>Написал(а):</dt>
-						<dd>RealARTs</dd>
-						<dt>В новости:</dt>
-						<dd>Шаблон для людей</dd>
-						<dt>Когда?:</dt>
-						<dd> <time datetime="2014-06-24T03:15:14">Вчера в 03:15:14</time></dd>
-					</dl>
-				</div>
-
-				<div>
-					<img src="/" alt="img">
-					<dl>
-						<dt>Написал(а):</dt>
-						<dd>RealARTs</dd>
-						<dt>В новости:</dt>
-						<dd>Шаблон для людей</dd>
-						<dt>Когда?:</dt>
-						<dd> <time datetime="2014-06-24T03:15:14">Вчера в 03:15:14</time></dd>
-					</dl>
-				</div>
-
-				<div>
-					<img src="/" alt="img">
-					<dl>
-						<dt>Написал(а):</dt>
-						<dd>RealARTs</dd>
-						<dt>В новости:</dt>
-						<dd>Шаблон для людей</dd>
-						<dt>Когда?:</dt>
-						<dd> <time datetime="2014-06-24T03:15:14">Вчера в 03:15:14</time></dd>
-					</dl>
-				</div>
-
-			</aside>
-			<!-- end comments  -->
+			</form>
 
 		</section>
+		<!-- end chat -->
+
+		<!-- comments -->
+		<aside>
+
+				<h3>Последние комментарии</h3>
+
+				<div>
+					<img src="/" alt="img">
+					<dl>
+						<dt>Написал(а):</dt>
+						<dd>RealARTs</dd>
+						<dt>В новости:</dt>
+						<dd>Шаблон для людей</dd>
+						<dt>Когда?:</dt>
+						<dd><time datetime="2014-06-24T03:15:14">Вчера в 03:15:14</time></dd>
+					</dl>
+				</div>
+
+				<div>
+					<img src="/" alt="img">
+					<dl>
+						<dt>Написал(а):</dt>
+						<dd>RealARTs</dd>
+						<dt>В новости:</dt>
+						<dd>Шаблон для людей</dd>
+						<dt>Когда?:</dt>
+						<dd><time datetime="2014-06-24T03:15:14">Вчера в 03:15:14</time></dd>
+					</dl>
+				</div>
+
+				<div>
+					<img src="/" alt="img">
+					<dl>
+						<dt>Написал(а):</dt>
+						<dd>RealARTs</dd>
+						<dt>В новости:</dt>
+						<dd>Шаблон для людей</dd>
+						<dt>Когда?:</dt>
+						<dd><time datetime="2014-06-24T03:15:14">Вчера в 03:15:14</time></dd>
+					</dl>
+				</div>
+
+		</aside>
+		<!-- end comments  -->
 
 		<!-- main footer -->
 		<footer>
@@ -426,42 +407,38 @@
 			<div>
 				<!-- footers logo -->
 				<div>
-					<h2>
+					<p>
 						COOLWAREZSITE.COM<br>
 						<strong><em>Современный варез портал</em></strong> 
-					</h2>
+					</p>
 				</div>
 				<!-- end footers logo -->
 
 
 				<!-- Banner 468x60 -->
-				<div class="banner">
-					<i>Banner 468x60</i>
-				</div>
+				<a href="#">
+					<img src="#" alt="banner">
+					<p>Banner 468x60</p>
+				</a>
 				<!-- end Banner 468x60 -->
 
 
 				<div>
 					<!-- counters -->
-					<div>
-						<img src="/" alt="Counter 88x31">
-					</div>
-					<div>
-						<img src="/" alt="Counter 88x31">
-					</div>
+					<img src="/" alt="Counter 88x31">
+					<img src="/" alt="Counter 88x31">
 					<!-- end counters -->
 
 					<!-- copyright -->
-					<span>COOLWAREZSITE.COM<br>
-						Copyright 2011 © All Rights Reserved</span>
+					<p>COOLWAREZSITE.COM<br>
+						Copyright 2011 © All Rights Reserved</p>
 					<!-- end copyright -->
-
 				</div>
 			</div>
 
 			<!-- caption -->
 			<div>
-				<i>DESIGNED BY REALARTS</i>
+				<p>DESIGNED BY REALARTS</p>
 			</div>
 			<!-- end caption -->
 
